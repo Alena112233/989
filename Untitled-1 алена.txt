@@ -1,0 +1,32 @@
+var a,b,c,x:real;
+begin 
+repeat 
+writeln('Введите тип арифм. операции (1 - сложение, 2 - вычитание, 3 - умножение, 4 - деление, 0 - остановить программу'); 
+readln(x); 
+if x=1  then   begin   
+writeln('Введите 2 числа');   
+readln(a,b);   
+c:=a+b;   
+writeln('Ответ: ',c);   
+end; 
+if x=2  then   begin   
+writeln('Введите 2 числа');   
+readln(a,b);   
+c:=a-b;   
+writeln('Ответ: ',c);   
+end; 
+if x=3  then   begin   
+writeln('Введите 2 числа');   
+readln(a,b);   
+c:=a*b;   
+writeln('Ответ: ',c);   
+end; 
+if x=4  then   begin   
+writeln('Введите 2 числа');   
+readln(a,b);   
+c:=a/b;   
+writeln('Ответ: ',c);   
+end; 
+if x=0 then writeln('Пока!'); 
+until x=0;
+end.
